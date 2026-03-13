@@ -105,12 +105,13 @@ You requested to reset your password.
 
 Your OTP is: {otp_code}
 
-This OTP will expire in 10 minutes.
+This OTP will expire in 3 minutes.
 
 If you did not request this, please ignore this email.
 
 Regards,
 WaveLynk HRMS
 """.strip()
+
 
     return send_email(user_email, subject, body)
