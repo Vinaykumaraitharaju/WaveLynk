@@ -1,0 +1,11 @@
+streamlit
+pandas
+openpyxl
+xlsxwriter
+sqlalchemy
+bcrypt
+python-dotenv
+reportlab
+holidays
+extra-streamlit-components
+st-cookies-manager
