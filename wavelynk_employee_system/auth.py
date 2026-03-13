@@ -109,7 +109,7 @@ def create_password_reset_otp(identifier: str):
         return False, "No valid registered email found for this account."
 
     otp_code = f"{random.randint(100000, 999999)}"
-    expires_at = (now_dt() + timedelta(minutes=10)).strftime("%Y-%m-%d %H:%M:%S")
+    expires_at = (now_dt() + timedelta(minutes=3)).strftime("%Y-%m-%d %H:%M:%S")
 
     execute(
         """
@@ -204,3 +204,4 @@ def logout_user():
     st.session_state.logged_in = False
     st.session_state.user = None
     st.session_state.page = "Dashboard"
+
